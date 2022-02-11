@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{template/twentysecondcv} % a4paper for A4
+
+
+
+\hyphenation{elektro-ener-ge-tycznym}
+\hyphenation{wielo-mo-do-we}
+\hyphenation{sze-re-go-we}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{img/photo2.jpg} % Profile picture
+
+\cvname{mgr inż. Jakub Głuszek} % Your name
+\cvjobtitle{Programista/Automatyk} % Job title/career
+
+\cvdate{28 marca 1994} % Date of birth
+\cvaddress{Polska, Gdańsk} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{} % Phone number
+%\cvsite{http://en.wikipedia.org} % Personal website
+\cvmail{jjgluszek@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Ambitny programista/automatyk zawodowo pracujący w sektorze energetyki. Kierownik projektów układów automatyki do regulacji stacji transformatorowych. Programista aplikacji desktopowych pisanych w~językach wysokiego poziomu. Freelancer utrzymujący i~rozwijający webową aplikację ASP.NET MVC.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{
+{Git/4.5},
+{\LaTeX/4.5},
+{Embedded ARM(STM32)/4.0},
+{SQL/3.0},
+{HTML,CSS/3.0},
+{C,C++/3.0},
+{MATLAB/5.0},
+{ASP.NET/4.0},
+{{.NET (C\#)}/5.0}}
+
+\languages{{Angielski/Biegła znajomość w mowie i piśmie}, {Polski/Język ojczysty}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Edukacja}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2017-2018}{Politechnika Gdańska}{}{Studia magisterskie na wydziale Elektroniki, Telekomunikacji i Informatyki na kierunku Automatyka i Robotyka.}
+	\twentyitem{2013-2017}{Politechnika Gdańska}{}{Studia inżynierskie na wydziale Elektroniki, Telekomunikacji i Informatyki na kierunku Automatyka i Robotyka. Członek koła naukowego SKALP.}
+	%\twentyitem{2010-2013}{XX Liceum Ogólnokształcące w Gdańsku}{}{Profil matematyczno-fizyczny. Uczestnictwo w samorządowym projekcie ,,Zdolni z Pomorza'' w dziedzinie matematyki.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%\begin{twenty}
+%\twentyitem{1234}{lalal}{lalala}{lalalalalalla}
+%\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+%	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+%	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+%	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Nagrody}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitem{2015}{III miejsce w hackathonie STM32 ,,Touch the World''}{} {Projekt ,,Miniaturowego zdalnie sterowanego pojazdu badawczego".}
+	%\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Doświadczenie zawodowe}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2015\small{-obecnie}}{Instytut Energetyki Instytut Badawczy O/Gdańsk}{}{Praca na stanowisku specjalisty inżynieryjno-technicznego. Do obowiązków należy zaliczyć prowadzenie projektów, konstruowanie urządzeń zarówno od strony sprzętowej jak i~oprogramowania, pisanie aplikacji w językach wysokiego poziomu.}
+	\twentyitem{2019\small{-obecnie}}{Wyższa Szkoła Bankowa w Gdańsku}{}{Prowadzenie zajęć  laboratoryjnych z przedmiotów: programowanie obiektowe, zaawansowane techniki obiektowe, programowanie w~C++ oraz postawy przetwarzania sygnałów.}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Wybrane projekty}
+\subsection{Zawodowe}
+\vspace{-0.25cm}
+
+
+\subsubsection*{Układ regulacji nadrzędnej dla farm wiatrowych}
+Projekt aplikacji desktopowej WPF (MVVM) .NET (C\#), która steruje nadrzędnym regulatorem farmy wiatrowej. W projekcie została wykorzystana m.in.: komunikacja z serwerem OPC oraz łączność z ośrodkami nadrzędnymi w oparciu o stos TCP/IP.
+
+\subsubsection*{Utrzymanie i rozwój systemu CRM dla firmy telekomunikacyjnej}
+Utrzymanie i rozwój aplikacji opartej na platformie .NET pisanej w wykorzystaniem framework'a ASP.NET MVC dla jednej z wiodących firm telekomunikacyjnych w Gdańsku. 
+
+\subsubsection*{Układy automatycznej regulacji stacji transformatorowych}
+Kierowanie realizacją projektów automatyki ARST dla stacji transformatorowych. W~tym sporządzaniem dokumentacji technicznych, przygotowywaniem list sygnałów, testów FAT jak i późniejszym wdrożeniem układów na obiekcie elektroenergetycznym.
+
+\subsubsection*{Przetwornik numeru zaczepu transformatora}
+Konstrukcja urządzenia przetwarzającego aktualny stan zaczepu transformatora\\ i~przekazującego tę informację do innych urządzeń. W projekcie poza standardowymi wyjściami dwustanowymi zostały wykorzystane protokoły komunikacyjne szeregowe oraz sieciowe. Przetwornik posiada wyjścia światłowodowe wielomodowe, Ethernet, RS485 oraz pętlę prądową 4-20 mA.
+
+\subsubsection*{Konwerter pętli prądowej $\pm$~20 mA na protokół Modbus}
+Układ przetwarzający szeregową komunikację zrealizowaną na pętli prądowej (cztery kanały) na protokół Modbus (dwa kanały) wykorzystujący interfejs RS485.
+
+\subsection{Hobbistyczne}
+\vspace{-0.25cm}
+\subsubsection*{Cyfrowy przedwzmacniacz gramofonowy RIAA}
+Skonstruowany z oparciu do mikrokontroler STM32F7. Układ realizuje korekcję RIAA. W projekcie został wykorzystany m.in.: koprocesor DSP, wyświetlacz dotykowy, zewnętrzną pamięć SDRAM i kodeki audio. 
+
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\section{Zainteresowania}
+%
+%Szeroko rozumiana elektronika i robotyka, w tym budowa własnego drona od warstwy sprzętowej po oprogramowanie. 
+
+\vspace{0.9cm}
+\tiny{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).}
+
+
+\end{document} 
