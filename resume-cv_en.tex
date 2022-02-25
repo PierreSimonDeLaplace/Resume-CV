@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{template/twentysecondcv} % a4paper for A4
+
+
+
+\hyphenation{elektro-ener-ge-tycznym}
+\hyphenation{wielo-mo-do-we}
+\hyphenation{sze-re-go-we}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{img/photo2.jpg} % Profile picture
+
+\cvname{mgr inż. Jakub Głuszek} % Your name
+\cvjobtitle{Programista/Automatyk} % Job title/career
+
+\cvdate{28 marca 1994} % Date of birth
+\cvaddress{Polska, Gdańsk} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{} % Phone number
+%\cvsite{http://en.wikipedia.org} % Personal website
+\cvmail{jjgluszek@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Ambitious control/software engineer working professionally in the power industry. Project manager of reactive power control systems for transformer stations. Desktop applications developer. Freelancer maintaining and developing ASP.NET MVC web application.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{
+{Git/4.5},
+{\LaTeX/4.5},
+{Embedded ARM(STM32)/4.0},
+{SQL/3.0},
+{HTML,CSS/3.0},
+{C,C++/3.0},
+{MATLAB/5.0},
+{ASP.NET/4.0},
+{{.NET (C\#)}/5.0}}
+
+\languages{{English/Fluent in speech and writing\\}, {Polish/Native language}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Edukacja}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2017-2018}{Gdańsk University of Technology}{}{Master of Science degree in Control Engineering at the Faculty of Electronics, Telecommunications and Informatics.}
+	\twentyitem{2013-2017}{Gdańsk University of Technology}{}{Bachelor of Science degree in Control Engineering at the Faculty of Electronics, Telecommunications and Informatics.\\Member of SKALP student scientific association}
+\end{twenty}
+
+%\begin{twenty}
+%\twentyitem{1234}{lalal}{lalala}{lalalalalalla}
+%\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+%	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+%	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+%	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Nagrody}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitem{2015}{III place in hackathotn STM32 ,,Touch the World''}{} {Project of ,,Miniature remote-controlled research vehicle".}
+	%\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Doświadczenie zawodowe}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2015\small{-present}}{Institute of Power Engineering }{}{Work as an engineering and technical specialist. Responsibilities include leading projects, developing embedded systems (hardware and software) as well as developing desktop applications in high level languages.}
+	\twentyitem{2019\small{-present}}{WSB University in Gdańsk}{}{Lecturing lab classes in object-oriented programming, advanced object-oriented techniques, programming in C++, and digital signal processing.}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Wybrane projekty}
+\subsection{Zawodowe}
+\vspace{-0.25cm}
+
+
+\subsubsection*{Wind farm master active power controller}
+Design a WPF (MVVM) .NET (C\#) desktop application that sends reference active power value to a master controller for a 90 MW wind farm. The project includes communication with the wind farm server via the OPC protocol and the superior center using a TCP/IP stack.
+
+\subsubsection*{Maintenance and development of CRM system}
+Maintenance and development of a .NET application written using the ASP.NET MVC framework for one of the leading telecommunications companies in Gdańsk. 
+
+\subsubsection*{Reactive power control systems}
+Leading projects of reactive power control systems for the biggest transformer stations.
+
+\subsubsection*{Transformer tap changer position indicator}
+The design of a device that processes the current state of a transformer's tap changer position and transmits the information to other devices. In addition to standard binary outputs, serial and network communication protocols were used in the design. The converter has multi-mode fiber optic outputs, Ethernet, RS485, and a 4-20 mA current loop.
+
+\subsubsection*{Current loop $\pm$~20 m to Modbus protocol converter}
+The device process the current loop serial communication (four channels) and sends data via RS485 and Modbus protocol to other devices.
+
+
+\subsection{Hobbyist}
+\vspace{-0.25cm}
+\subsubsection*{RIAA Phono Preamp based on the STM32F7 microcontroller}
+The chip performs RIAA correction using IIR biquad IIR filters. The project includes a DSP coprocessor, touch screen display, external SDRAM memory, and audio codecs.
+
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\section{Zainteresowania}
+%
+%Szeroko rozumiana elektronika i robotyka, w tym budowa własnego drona od warstwy sprzętowej po oprogramowanie. 
+
+\vspace{0.9cm}
+\tiny{I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).}
+
+
+\end{document} 

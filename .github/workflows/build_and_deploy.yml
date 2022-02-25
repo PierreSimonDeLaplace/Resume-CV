@@ -7,6 +7,7 @@ jobs:
       # Edit here with the names of your latex file and directory (can use ".")
       DIR: .
       FILE: resume-cv
+      FILE_EN: resume-cv_en
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -14,14 +15,17 @@ jobs:
         run: sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-lang-polish texlive-bibtex-extra biber
       - name: LaTeX compile
         working-directory: ${{ env.DIR }}
-        run: pdflatex ${{ env.FILE }}.tex; pdflatex ${{ env.FILE }}.tex
-      - name: move
+        run: pdflatex ${{ env.FILE }}.tex; pdflatex ${{ env.FILE }}.tex; pdflatex ${{ env.FILE_EN }}.tex; pdflatex ${{ env.FILE_EN }}.tex
+      - name: move_pl
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
+      - name: move_en
+        run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE_EN }}.pdf ./github_artifacts/
       - name: Upload pdf as artifact
         uses: actions/upload-artifact@v2
         with:
           name: ${{ env.FILE }}.pdf
           path: ./github_artifacts
+
   deploy:
     # Edit here if compiling multiple papers
     needs: [paper]
