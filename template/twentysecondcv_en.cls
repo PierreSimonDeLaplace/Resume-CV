@@ -165,7 +165,7 @@
 			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
-%			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvsite\\}
+			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvsite\\}
 			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}}
 		\end{tabular}
 
@@ -257,8 +257,9 @@
 	#1&\parbox[t]{0.83\textwidth}{%
 		\textbf{#2}%
 		\hfill%
-		{\footnotesize#3}\\%
-		#4\vspace{\parsep}%
+		{\textit{#3}}
+		\vspace{5px}\\
+		#4\vspace{10px}%
 	}\\
 }
 
@@ -288,3 +289,6 @@
 \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
 
 \RequirePackage{hyperref}
+
+% Do not split words
+\hyphenpenalty=10000 
